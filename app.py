@@ -12,7 +12,7 @@ sns = boto3.client('sns', region_name='us-east-1')
 users_table = dynamodb.Table('MovieMagic_Users')
 bookings_table = dynamodb.Table('MovieMagic_Bookings')
 
-SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:841162686181:MovieShows'  # Replace this with your topic ARN
+SNS_TOPIC_ARN = 'arn:aws:sns:us-east-1:195275652542:MovieMagic'  # Replace this with your topic ARN
 
 movies = [
     {"id": 2, "name": "Avengers: Endgame", "time": "6:00 PM", "price": 150, "rating": 4.8, "image": "ch1.jpeg"},
